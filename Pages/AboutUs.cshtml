@@ -28,7 +28,7 @@
 			Desarrollador Back-End: Mario Espinoza
 		</p>
 
-		<a href="Login.html"><input class="login" type="button" value="Iniciar Sesión" /></a>
+		<a class="Login"><input class="login" type="button" value="Iniciar Sesión" /></a>
 	</main>
 
 	<nav>
@@ -55,9 +55,28 @@
 
 	@* <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script> *@
 	<script>
-		let Home = document.querySelector(".Inicio").addEventListener("click", function () {
-			window.location.replace("/Index");
-		});
+		//NAVEGACION
+
+	//ICONO SUPERIOR IZQUIERDO
+	let Icono = document.querySelector(".Icono").addEventListener("click", function () {
+		window.location.replace("/AboutUs");
+	});
+
+	//BOTON LOGIN
+	let Login=document.querySelector(".Login").addEventListener("click", function(){
+		window.location.replace("/Login");
+	})
+	//NAVBAR INFERIOR
+	let Home = document.querySelector(".Inicio").addEventListener("click", function () {
+		window.location.replace("/Index");
+	});
+	let Ruta = document.querySelector(".GenerarRuta").addEventListener("click", function () {
+		window.location.replace("/GenerarRuta");
+	});
+	let help = document.querySelector(".Ayuda").addEventListener("click", function () {
+		window.location.replace("/Ayuda");
+	});
+
 	</script>
 	
 </body>
